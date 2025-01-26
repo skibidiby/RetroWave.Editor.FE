@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes, } from "react-router-dom";
 import {
     Home,
     NotFound,
+    LogIn
 } from "../screens";
 import RequireAuth from "./RequireAuth";
 const Navigation = () => {
@@ -19,6 +20,7 @@ const Navigation = () => {
                         {/* <Route path="/password" element={<PasswordAfterReset />} />
 								<Route path="/login" element={<LogIn />} />
 								<Route path="/logout" element={<Logout />} /> */}
+                        <Route path="/login" element={<LogIn />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </>
